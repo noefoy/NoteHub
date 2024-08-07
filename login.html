@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vincent Witzmann">
+    <meta name="keywords" content="NoteHub">
+    <link rel="stylesheet" href="styles.css">
+    <title>NoteHub - Login</title>
+    <link rel="icon" type="image/png" href="./notehub_logo.png">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div class="topnav">
+    <nav>
+        <img class="notehub_logo" src="./notehub_logo.png" alt="Logo">
+        <div class="menu-icon fix">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="help.php">Help</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</div>
+
+<section class="logincontent">
+    <div class="logincontainer">
+        <h1 class="loginh1">
+            <span style="--i: 1;">W</span><span style="--i: 2;">e</span><span style="--i: 3;">l</span><span style="--i: 4;">c</span><span style="--i: 5;">o</span><span style="--i: 6;">m</span><span style="--i: 7;">e</span>
+            <span style="--i: 8;">t</span><span style="--i: 9;">o</span>
+            <span style="--i: 10;">N</span><span style="--i: 11;">o</span><span style="--i: 12;">t</span><span style="--i: 13;">e</span><span style="--i: 14;">H</span><span style="--i: 15;">u</span><span style="--i: 16;">b</span>
+          </h1>
+          
+          
+          <form action="login.php" method="POST" class="login-form">
+            <label for="username" class="loginlabel">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            
+            <label for="password" class="loginlabel">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <div id="success-message" style="display: none; color: green; font-weight: bold; margin-top: 20px; margin-bottom: 20px;">Account created successfully.</div>
+
+            <input type="submit" value="Login">
+        </form>
+        <div class="login-options">
+            Don't have an account? <a href="create_account.php" class="login-options-create-label">Create</a> one
+        </div>
+    </div>
+</section>
+
+<script>
+    // Check if success message should be displayed
+    const urlParams = new URLSearchParams(window.location.search);
+    const successParam = urlParams.get('success');
+    if (successParam === '1') {
+        document.getElementById('success-message').style.display = 'block';
+    }
+</script>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+<footer>
+    <p class="footercontent">&copy; 2024 NoteHub. All rights reserved. <a href="impressum.php" class="footercontent">Impressum</a></p>
+</footer>
+</html>

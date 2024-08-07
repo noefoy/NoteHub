@@ -1,0 +1,428 @@
+/* Global styles */
+* {
+  font-size: 23px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  background-color: #f5f5e1;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+
+
+.faq {
+  margin-top: 60px;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 60px;
+}
+
+footer {
+  width: 100%;
+  background-color: #8f0604;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+}
+
+.noteoverview-footer {
+  width: 100%;
+  background-color: #8f0604;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.no-notes-message {
+  font-size: 18px;
+  color: #555; /* Adjust color as needed */
+  text-align: center;
+  margin-top: 60px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Styles specific to noteoverview.html */
+.notecontent {
+  min-height: calc(100vh - 200px); /* 200px for header and footer combined */
+  margin-top: 60px; /* Adjust as needed */
+}
+
+.create-note-container {
+  min-height: calc(100vh - 200px);
+  margin-top: 60px;
+}
+
+
+
+.create-note {
+  text-align: center;
+}
+
+.footercontent {
+  background-color: #8f0604;
+  color: #ffdc72;
+  text-decoration: underline;
+}
+
+.impressum_title2 {
+  font-weight: bolder;
+}
+
+.topnav {
+  height: 4vh;
+  margin-bottom: 4vh;
+  position: relative;
+  z-index: 1;
+  margin-top: 35px; /* Set margin-top to 35px */
+  border-radius: 20px; /* Add rounded corners */
+}
+
+nav {
+  width: 95%; /* Set the width of the nav */
+  max-width: 1500px; /* Set a maximum width to prevent it from becoming too wide */
+  margin: 0 auto; /* Center the nav horizontally */
+  background-color: #ffdc72;
+  position: relative;
+  border-color: #ffdc72;
+  border-width: 0.5em;
+  border-style: solid;
+  border-bottom: #ffdc72;
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Center items vertically */
+  padding: 0 20px; /* Add padding to the edges */
+  border-radius: 40px; /* Add rounded corners */
+  font-weight: bolder;
+  margin-top: -15px;
+}
+
+
+nav img {
+  margin-left: 1em;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-variant: small-caps;
+  color: white;
+}
+
+
+
+nav ul {
+  float: right;
+  background-color: #ffdc72;
+}
+
+  nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+  background-color: #ffdc72;
+}
+
+nav ul li a {
+  font-family: "Oswald", sans-serif;
+  color: rgb(255, 0, 0);
+  font-size: 24px;
+  text-decoration: none;
+  padding: 0 1em;
+  display: block;
+  background-color: #ffdc72;
+}
+
+nav ul li a {
+  font-family: "Oswald", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  text-decoration: none;
+  padding: 10px 20px; /* Add padding to navigation links */
+  border-radius: 10px; /* Add rounded corners */
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transitions */
+}
+
+nav ul li a:hover {
+  color: #8f0604;
+  transform: scale(1.1);
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Set the height of the underline */
+  background-color: #8f0604; /* Set the color of the underline */
+  transform: scaleX(0); /* Initially hide the underline */
+  transition: transform 0.3s ease; /* Add transition for the underline */
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1); /* Show the underline on hover */
+}
+
+
+.notehub_logo {
+  height: 3em;
+  margin-left: 1em;
+  background-color: #ffdc72;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
+
+  .nav-links {
+      display: none;
+  }
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 90px;
+  margin-bottom: 70px;;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logincontainer {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  text-align: center;
+  user-select: none;
+}
+
+
+
+.loginh1-container {
+  text-align: center; /* Center the text horizontally */
+}
+
+.loginh1 {
+  margin-bottom: 20px;
+  display: inline-block; /* Ensures each letter is treated individually */
+}
+
+.loginh1 span {
+  display: inline-block; /* Ensures each letter is treated individually */
+  animation: wave 2s ease-in-out infinite; /* Apply the animation */
+  animation-delay: calc(0.1s * var(--i)); /* Delay each letter based on its position */
+  font-size: 30px;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0); /* Initial position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move letters up */
+  }
+  100% {
+    transform: translateY(0); /* Back to initial position */
+  }
+}
+
+
+
+.login-form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-options {
+  text-align: center;
+}
+
+.login-options-create-label {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.loginlabel {
+  float: left;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+input[type="submit"] {
+  width: 20%;
+  padding: 10px;
+  background-color: #785a01;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #533e00;
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 600px) {
+  * {
+      font-size: 18px;
+  }
+
+  nav .logo, nav img {
+      font-size: 24px;
+  }
+
+  nav ul li a {
+      font-size: 18px;
+  }
+
+  main {
+      margin-left: 2em;
+  }
+}
+
+.create-note-button {
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.create-note-button:hover {
+  transform: scale(1.1);
+}
+
+.create-note-link {
+  font-size: 19px;
+}
+
+.impressumcontainer {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  user-select: none;
+}
+
+.impressumh1 {
+  font-size: 30px;
+}
+
+#impressum_title2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.notes-each {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 10px;
+}
+
+.note {
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding inside the note */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.note:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.note h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.note p {
+  font-size: 16px;
+}
+
+.big_button{
+  border: 1px solid #ccc; /* Border color */
+  width: 500px;
+  background-color: #8f0604;
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding inside the note */
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.big_button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  cursor: pointer;
+}
+
+.big_button h2 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  background-color: #8f0604;
+}
